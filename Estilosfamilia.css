@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+
+:root{
+    --verde: #0c443a;
+    --limon: #25d1b2;
+    --degradado:linear-gradient(90deg,var(--limon),var(--verde));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+html{
+    font-size: 62.4%;
+    overflow:auto;
+}
+body{
+    background: #f9f9f9;
+   
+        
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(inicio_fondo.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0,0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+/*Asignamos color verde oscuro a mi segundo nombre*/
+
+header .logo{
+    font-size: 2rem;
+    color: var(--verde);
+}
+/*Asignamos color limon a mi primer nombre*/
+header .logo span{
+    color: var(--limon);
+}
+/*Asignamos color verde oscuro de nuestra funcion al nav*/
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--verde);
+}
+
+/*Aplicamos cambio de color al pasar el mouse en el nav*/
+header .navbar a:hover{
+    color: var(--limon);
+
+}
+/*Ocultamos el checbox*/
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: var(--verde);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+body{
+    background: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.wrapper{
+    margin-top: 10%;   
+
+}
+
+.wrapper h1{
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+.team{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+        
+}   
+
+.team .team_member{
+    background: whitesmoke;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+
+.team .team_member h3{
+    color: var(--limon);
+    font-size: 26px;
+    margin-top: 50px;
+}
+   
+.team .team_member p.role{
+    color: grey;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px;
+}
+.team .team_member p{
+    color: grey;
+    font-size: 12px;
+    margin: 12px;
+}
+
+.team .team_member .team_img{
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+}
+
+.team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+.team2{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+   
+    
+}   
+
+.team2 .team_member{
+    background: whitesmoke;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+
+.team2 .team_member h3{
+    color: var(--limon);
+    font-size: 26px;
+    margin-top: 50px;
+}
+   
+.team2 .team_member p.role{
+    color: grey;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px;
+}
+.team2 .team_member p{
+    color: grey;
+    font-size: 12px;
+    margin: 12px;
+}
+
+.team2 .team_member .team_img{
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+}
+
+.team2 .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+
+:root{
+    --verde: #0c443a;
+    --limon: #25d1b2;
+    --degradado:linear-gradient(90deg,var(--limon),var(--verde));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+
+body {
+    /*background: linear-gradient(to right, #0f2027, #203a43, #2c5364);*/
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(inicio_fondo.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0,0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+/*Asignamos color verde oscuro a mi segundo nombre*/
+
+header .logo{
+    font-size: 2rem;
+    color: var(--verde);
+}
+/*Asignamos color limon a mi primer nombre*/
+header .logo span{
+    color: var(--limon);
+}
+/*Asignamos color verde oscuro de nuestra funcion al nav*/
+header .navbar a{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: var(--verde);
+}
+
+/*Aplicamos cambio de color al pasar el mouse en el nav*/
+header .navbar a:hover{
+    color: var(--limon);
+
+}
+/*Ocultamos el checbox*/
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: var(--verde);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.input-control i {
+    position:absolute;
+    top: 30px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.input-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.input-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
